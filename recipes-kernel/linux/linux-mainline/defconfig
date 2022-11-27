@@ -887,8 +887,77 @@ CONFIG_HAVE_EBPF_JIT=y
 # Device Drivers
 #
 CONFIG_HAVE_PCI=y
-# CONFIG_PCI is not set
-# CONFIG_PCCARD is not set
+CONFIG_PCI=y
+CONFIG_PCI_DOMAINS=y
+CONFIG_PCI_DOMAINS_GENERIC=y
+CONFIG_PCI_SYSCALL=y
+# CONFIG_PCIEPORTBUS is not set
+CONFIG_PCIEASPM=y
+CONFIG_PCIEASPM_DEFAULT=y
+# CONFIG_PCIEASPM_POWERSAVE is not set
+# CONFIG_PCIEASPM_POWER_SUPERSAVE is not set
+# CONFIG_PCIEASPM_PERFORMANCE is not set
+# CONFIG_PCIE_PTM is not set
+# CONFIG_PCI_MSI is not set
+CONFIG_PCI_QUIRKS=y
+# CONFIG_PCI_DEBUG is not set
+# CONFIG_PCI_STUB is not set
+# CONFIG_PCI_IOV is not set
+# CONFIG_PCI_PRI is not set
+# CONFIG_PCI_PASID is not set
+# CONFIG_HOTPLUG_PCI is not set
+
+#
+# PCI controller drivers
+#
+# CONFIG_PCI_FTPCI100 is not set
+# CONFIG_PCI_HOST_GENERIC is not set
+# CONFIG_PCI_V3_SEMI is not set
+# CONFIG_PCIE_ALTERA is not set
+
+#
+# DesignWare PCI Core Support
+#
+# end of DesignWare PCI Core Support
+
+#
+# Mobiveil PCIe Core Support
+#
+# end of Mobiveil PCIe Core Support
+
+#
+# Cadence PCIe controllers support
+#
+# CONFIG_PCIE_CADENCE_PLAT_HOST is not set
+# CONFIG_PCI_J721E_HOST is not set
+# end of Cadence PCIe controllers support
+# end of PCI controller drivers
+
+#
+# PCI Endpoint
+#
+# CONFIG_PCI_ENDPOINT is not set
+# end of PCI Endpoint
+
+#
+# PCI switch controller drivers
+#
+# CONFIG_PCI_SW_SWITCHTEC is not set
+# end of PCI switch controller drivers
+
+# CONFIG_CXL_BUS is not set
+CONFIG_PCCARD=m
+CONFIG_PCMCIA=m
+CONFIG_PCMCIA_LOAD_CIS=y
+CONFIG_CARDBUS=y
+
+#
+# PC-card bridges
+#
+# CONFIG_YENTA is not set
+# CONFIG_PD6729 is not set
+# CONFIG_I82092 is not set
+# CONFIG_RAPIDIO is not set
 
 #
 # Generic Driver Options
@@ -2593,9 +2662,32 @@ CONFIG_SND_DRIVERS=y
 #
 # HD-Audio
 #
+CONFIG_SND_HDA=m
+CONFIG_SND_HDA_INTEL=m
+# CONFIG_SND_HDA_HWDEP is not set
+# CONFIG_SND_HDA_RECONFIG is not set
+# CONFIG_SND_HDA_INPUT_BEEP is not set
+# CONFIG_SND_HDA_PATCH_LOADER is not set
+# CONFIG_SND_HDA_CODEC_REALTEK is not set
+# CONFIG_SND_HDA_CODEC_ANALOG is not set
+# CONFIG_SND_HDA_CODEC_SIGMATEL is not set
+# CONFIG_SND_HDA_CODEC_VIA is not set
+# CONFIG_SND_HDA_CODEC_HDMI is not set
+# CONFIG_SND_HDA_CODEC_CIRRUS is not set
+# CONFIG_SND_HDA_CODEC_CS8409 is not set
+# CONFIG_SND_HDA_CODEC_CONEXANT is not set
+# CONFIG_SND_HDA_CODEC_CA0110 is not set
+# CONFIG_SND_HDA_CODEC_CA0132 is not set
+# CONFIG_SND_HDA_CODEC_CMEDIA is not set
+# CONFIG_SND_HDA_CODEC_SI3054 is not set
+# CONFIG_SND_HDA_GENERIC is not set
+CONFIG_SND_HDA_POWER_SAVE_DEFAULT=0
+# CONFIG_SND_HDA_INTEL_HDMI_SILENT_STREAM is not set
 # end of HD-Audio
 
+CONFIG_SND_HDA_CORE=m
 CONFIG_SND_HDA_PREALLOC_SIZE=64
+CONFIG_SND_INTEL_DSP_CONFIG=m
 CONFIG_SND_ARM=y
 CONFIG_SND_SPI=y
 CONFIG_SND_USB=y

@@ -34,6 +34,12 @@ UTILITIES_INSTALL = " \
     resize-rootfs \
     ppp \
     tzdata \
+    alsa-lib \
+    alsa-plugins \
+    alsa-tools \
+    alsa-utils \
+    pulseaudio \
+    mpv \
 "
 
 WIFI_SUPPORT = " \
