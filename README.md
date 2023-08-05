@@ -126,7 +126,7 @@ Bluetooth - appears during system boot up <br>
 
 3. Build time
     Build times for each recipe are as follows
-    - console image ---> 2.5 hours
+    - console image ---> 3 hours (ETA:  0:02:58)
     - qt5 image ---> 
     - qt5 toolchain sdk ---> 
 
