@@ -126,8 +126,8 @@ Bluetooth - appears during system boot up <br>
 
 3. Build time
     Build times for each recipe are as follows
-    - console image ---> 3 hours (ETA:  0:02:58)
-    - qt5 image ---> 
+    - console image ---> 3 hours
+    - qt5 image ---> 3 hours (Differential build from console-image)
     - qt5 toolchain sdk ---> 
 
     Build times are approximate results for the following machine performance.
@@ -137,14 +137,14 @@ Bluetooth - appears during system boot up <br>
     - OS : Ubuntu 20.04 (Running in VMware)
     - VMware : Virtual Box (6.1.28)
 
-1. After compilation images appears in
+4. After compilation images appears in
 
     Zero version <br>
 	*~/yocto/tmp/deploy/images/licheepizero* <br>
     Zero Dock version <br>
 	*~/yocto/tmp/deploy/images/licheepizero-dock* <br>
 
-2. Insert SD CARD into dedicated CARD slot and issue following command to write an image
+5. Insert SD CARD into dedicated CARD slot and issue following command to write an image
 
     **Note:** <br>
     Be 100% sure to provide a valid device name (of=/dev/**sde**). Wrong name "/dev/sde" dameage Your system file ! <br> <br>
