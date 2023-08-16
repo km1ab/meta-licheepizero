@@ -25,6 +25,7 @@ SRC_URI = "https://www.kernel.org/pub/linux/kernel/v5.x/linux-${PV}.tar.xz \
 		file://003-add-original-lichee-pi-zero-lcd-touchscreen.dtsi.patch \
 		file://004-modify-sun8i-v3s-licheepi-zero.dts.patch \
 		file://005-modify-sun8i-v3s-licheepi-zero-dock.dts.patch \
+		file://009-ARM-dts-sun8i-enable-audio-on-Lichee-Pi-Zero-Dock.patch \
         	file://defconfig \
 "
 

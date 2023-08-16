@@ -93,7 +93,7 @@ WIFI_SUPPORT = " \
     wpa-supplicant \
 "
 
-IMAGE_INSTALL += " \
+IMAGE_INSTALL:append = " \
   ${QT_DEV_TOOLS} \
   ${DEV_TOOLS_INSTALL} \
   ${SYSTEM_TOOLS_INSTALL} \
